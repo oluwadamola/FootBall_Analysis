@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FootBall_Analysis</string>
+    <string name="red_card"> Red_Card</string>
+    <string name="yellow_card"> Yellow_card</string>
+    <string name="corner_kick">Corner Kick</string>
+    <string name="corner_kick">Corner Kick</string>
+
+
+</resources>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/aser">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+      <LinearLayout
+        android:layout_width="221dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+          <TextView
+              android:id="@+id/textViewA"
+              android:layout_width="231dp"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dp"
+              android:layout_marginTop="16dp"
+              android:text="Arsenal Fc"
+              android:textColor="@color/white"
+              android:textSize="26dp"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintLeft_toLeftOf="parent"
+              app:layout_constraintRight_toRightOf="parent"
+              app:layout_constraintTop_toTopOf="parent" />
+
+          <TextView
+              android:id="@+id/team_a_score"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="25dp"
+              android:layout_marginTop="15dp"
+              android:text="0"
+              android:textColor="@color/white"
+              android:textAlignment="center"
+              android:textSize="35dp"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintLeft_toLeftOf="parent"
+              app:layout_constraintRight_toRightOf="parent"
+              app:layout_constraintTop_toTopOf="parent" />
+
+          <Button
+              android:id="@+id/button8"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dp"
+              android:layout_marginTop="10dp"
+              android:onClick="AddOneForTeamAScore"
+              android:text="Add Score"
+              android:textColor="@color/black"
+              android:textSize="20sp" />
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+              <Button
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginTop="10dp"
+                  android:onClick="AddOne4ARed"
+                  android:text="Add + 1"
+                  android:textColor="@color/black"
+                  android:textSize="13dp" />
+
+              <TextView
+                  android:id="@+id/team_a_red_score"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginTop="10dp"
+                  android:text="0"
+                  android:textColor="@color/white"
+                  android:textSize="24dp" />
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="16dp"
+                  android:layout_marginTop="10dp"
+                  android:text="@string/red_card"
+                  android:textColor="@color/white"
+                  android:textSize="21dp" />
+
+          </LinearLayout>
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_weight="0.12">
+
+              <Button
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginTop="10dp"
+                  android:onClick="AddOne4AYellow"
+                  android:text="Add + 1"
+                  android:textColor="@color/black"
+                  android:textSize="16dp" />
+
+              <TextView
+                  android:id="@+id/team_a_yellow_score"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginTop="10dp"
+                  android:text="0"
+                  android:textColor="@color/white"
+                  android:textSize="24dp" />
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="16dp"
+                  android:layout_marginTop="10dp"
+                  android:text="@string/yellow_card"
+                  android:textColor="@color/white"
+                  android:textSize="21dp" />
+
+          </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_weight="0.13">
+
+              <Button
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginTop="10dp"
+                  android:onClick="AddOne4AConner"
+                  android:text="Add + 1"
+                  android:textColor="@color/black"
+                  android:textSize="16dp" />
+
+              <TextView
+                  android:id="@+id/team_a_conner"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginTop="10dp"
+                  android:text="0"
+                  android:textColor="@color/white"
+                  android:textSize="24dp" />
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="16dp"
+                  android:layout_marginTop="10dp"
+                  android:text="@string/corner_kick"
+                  android:textColor="@color/white"
+                  android:textSize="21dp" />
+
+          </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+              <Button
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginTop="10dp"
+                  android:onClick="AddOne4APenalty"
+                  android:text="Add + 1"
+                  android:textColor="@color/black"
+                  android:textSize="16dp" />
+
+              <TextView
+                  android:id="@+id/team_a_penalty"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginTop="10dp"
+                  android:text="0"
+                  android:textColor="@color/white"
+                  android:textSize="24dp" />
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="16dp"
+                  android:layout_marginTop="10dp"
+                  android:text="Penalty"
+                  android:textColor="@color/white"
+                  android:textSize="21dp" />
+
+          </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+              <Button
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginTop="10dp"
+                  android:onClick="AddOne4AOffside"
+                  android:text="Add + 1"
+                  android:textColor="@color/black"
+                  android:textSize="16dp" />
+
+              <TextView
+                  android:id="@+id/team_a_offside"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginTop="10dp"
+                  android:text="0"
+                  android:textColor="@color/white"
+                  android:textSize="24dp" />
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="16dp"
+                  android:layout_marginTop="10dp"
+                  android:text="Offside"
+                  android:textColor="@color/white"
+                  android:textSize="21dp" />
+
+          </LinearLayout>
+      </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
